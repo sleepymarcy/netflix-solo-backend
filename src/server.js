@@ -6,9 +6,11 @@ import path, { dirname } from "path"
 import { fileURLToPath } from "url"
 import { errorHandler } from "./errorHandlers.js"
 
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = dirname(__filename)
-const publicDirectory = path.join(__dirname, "../public")
+import mediaRouter from "./media/index.js"
+
+const fname = fileURLToPath(import.meta.url)
+const dname = dirname(fname)
+const publicDirectory = path.join(dname, "../public")
 
 const server = express()
 
@@ -25,14 +27,15 @@ const corsOptions = {
             callback(error)
         }
     },
-};
+}
 
 server.use(cors(corsOptions))
 server.use(express.json())
 server.use(express.static(publicDirectory))
+server.use('/media', mediaRouter)
 
-console.log(listEndpoints(server))
 server.use(errorHandler)
+console.log(listEndpoints(server))
 
 server.listen(PORT, () =>
     console.log('Server is running on port : ', PORT))
