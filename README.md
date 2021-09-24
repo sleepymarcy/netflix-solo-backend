@@ -4,29 +4,29 @@
 
 /media
 
-• POST Media
-• GET Media (list) (reviews included)
-• GET Media (single) (with reviews)
-• UPDATE Media
-• DELETE Media
+    • POST Media
+    • GET Media (list) (reviews included)
+    • GET Media (single) (with reviews)
+    • UPDATE Media
+    • DELETE Media
 
 
 /media/:id/poster
 
-• POST Poster to single media
+    • POST Poster to single media
 
 
 /media/:id/reviews
  
-• POST Review to media
-• DELETE Review of media
+    • POST Review to media
+    • DELETE Review of media
 
 
 /media/:id/pdf
 
-[EXTRA] Export single media as PDF with reviews
-[EXTRA] Search media by title (if it's not found in your search in OMDB and sync with your database)
-(Use axios or node-fetch)
+    [EXTRA] Export single media as PDF with reviews
+    [EXTRA] Search media by title (if it's not found in your search in OMDB and sync with your database)
+    (Use axios or node-fetch)
 
 ### Media
 
