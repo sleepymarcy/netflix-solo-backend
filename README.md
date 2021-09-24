@@ -1,6 +1,6 @@
 # Netflix API
 
-## BACKEND 
+## Backend 
 
 /media
 
@@ -29,7 +29,8 @@
 
 Use axios or node-fetch
 
-### MEDIA:
+### Media
+In JSON
 
    {
     "Title": "The Lord of the Rings: The Fellowship of the Ring",
@@ -40,7 +41,8 @@ Use axios or node-fetch
    }
    
    
-### REVIEWS:
+### Reviews
+In JSON
 
    {
     "_id": "123455", //SERVER GENERATED
@@ -52,8 +54,8 @@ Use axios or node-fetch
     
     
     
-## FRONTEND
+## Frontend
 Connect your api with your React Netflix Project
 
-## DEPLOY
+## Deploy
 Both client and server app should be deployed on your Heroku or Vercel account.
