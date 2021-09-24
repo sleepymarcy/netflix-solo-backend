@@ -1,26 +1,25 @@
 # Netflix API
 
-BACKEND
- 
+## BACKEND 
 
 /media
 
-POST Media
-GET Media (list) (reviews included)
-GET Media (single) (with reviews)
-UPDATE Media
-DELETE Media
+• POST Media
+• GET Media (list) (reviews included)
+• GET Media (single) (with reviews)
+• UPDATE Media
+• DELETE Media
 
 
 /media/:id/poster
 
-POST Poster to single media
+• POST Poster to single media
 
 
 /media/:id/reviews
  
-POST Review to media
-DELETE Review of media
+• POST Review to media
+• DELETE Review of media
 
 
 /media/:id/pdf
@@ -30,29 +29,31 @@ DELETE Review of media
 
 Use axios or node-fetch
 
-MEDIA:
-    {
-        "Title": "The Lord of the Rings: The Fellowship of the Ring",
-        "Year": "2001",
-        "imdbID": "tt0120737",  //UNIQUE
-        "Type": "movie",
-        "Poster": "https://m.media-amazon.com/images/M/MV5BMTM5MzcwOTg4MF5BMl5BanBnXkFtZTgwOTQwMzQxMDE@._V1_SX300.jpg"
-    }
+### MEDIA:
+
+  {
+   "Title": "The Lord of the Rings: The Fellowship of the Ring",
+   "Year": "2001",
+   "imdbID": "tt0120737",  //UNIQUE
+   "Type": "movie",
+   "Poster": "https://m.media-amazon.com/images/M/MV5BMTM5MzcwOTg4MF5BMl5BanBnXkFtZTgwOTQwMzQxMDE@._V1_SX300.jpg"
+  }
    
    
-REVIEWS:
-    {
-        "_id": "123455", //SERVER GENERATED
-        "comment": "A good book but definitely I don't like many parts of the plot", //REQUIRED
-        "rate": 3, //REQUIRED, max 5
-        "elementId": "5d318e1a8541744830bef139", //REQUIRED = IMDBID
-        "createdAt": "2019-08-01T12:46:45.895Z" // SERVER GENERATED
-    }
+### REVIEWS:
+
+  {
+   "_id": "123455", //SERVER GENERATED
+   "comment": "A good book but definitely I don't like many parts of the plot", //REQUIRED
+   "rate": 3, //REQUIRED, max 5
+   "elementId": "5d318e1a8541744830bef139", //REQUIRED = IMDBID
+   "createdAt": "2019-08-01T12:46:45.895Z" // SERVER GENERATED
+  }
     
     
     
-FRONTEND
+## FRONTEND
 Connect your api with your React Netflix Project
 
-DEPLOY
+## DEPLOY
 Both client and server app should be deployed on your Heroku or Vercel account.
