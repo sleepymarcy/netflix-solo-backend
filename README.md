@@ -29,7 +29,6 @@
 (Use axios or node-fetch)
 
 ### Media
-In JSON
 
     {
      "Title": "The Lord of the Rings: The Fellowship of the Ring",
@@ -41,7 +40,6 @@ In JSON
    
    
 ### Reviews
-In JSON
 
     {
      "_id": "123455", //SERVER GENERATED
